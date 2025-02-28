@@ -1,0 +1,27 @@
+.column {
+  height: 650px;
+}
+
+.column-0 {
+  background-color: black;
+}
+
+.column-1 {
+  background-color: orange;
+}
+
+.column-2 {
+  background-color: red;
+}
+
+.column-3 {
+  background-color: white;
+}
+
+.column-4 {
+  background-color: blue;
+}
+
+.column-5 {
+  background-color: red;
+}

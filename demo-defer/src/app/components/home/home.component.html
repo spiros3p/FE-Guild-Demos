@@ -1,0 +1,69 @@
+<div class="flex flex-row gap-5 justify-content-between mb-4 bg-blue-300 p-5">
+  @for (col of columns; let i = $index; track i ) {
+  <div class="column flex-1" [class]="'column-' + i"></div>
+  }
+</div>
+
+<!-- @defer {
+<app-child></app-child>
+} -->
+
+<!-- @defer (on idle) {
+<app-child></app-child>
+}  -->
+<!-- 
+@defer (on viewport) {
+<app-child></app-child>
+} @placeholder {
+<span>THIS PLACEHOLDER</span>
+} -->
+
+<!-- @defer (on interaction) {
+<app-child></app-child>
+} @placeholder {
+<span>THIS PLACEHOLDER</span>
+} -->
+
+<!-- @defer (on hover) {
+<app-child></app-child>
+} @placeholder {
+<span>THIS PLACEHOLDER</span>
+} -->
+
+<!-- @defer (on immediate) {
+<app-child></app-child>
+} @placeholder {
+<span>THIS PLACEHOLDER</span>
+} -->
+
+@defer (on timer(3s)) {
+<app-child></app-child>
+} @placeholder {
+<span>THIS PLACEHOLDER</span>
+}
+
+<!-- --------- COMBINATIONS ---------------- -->
+
+<!-- @defer (on timer(5s); prefetch on idle) {
+<app-child></app-child>
+} @placeholder {
+<span>THIS PLACEHOLDER</span>
+} -->
+
+<!-- @defer (on interaction; prefetch on viewport) {
+<app-child></app-child>
+} @placeholder {
+<span>THIS PLACEHOLDER</span>
+} -->
+
+<!-- @defer (on timer(1s)) {
+<app-child></app-child>
+} @placeholder (minimum 3s) {
+<span>THIS PLACEHOLDER</span>
+} -->
+
+<!-- @defer (on hover; prefetch on viewport) {
+<app-child></app-child>
+} @placeholder {
+<span>THIS PLACEHOLDER</span>
+} -->

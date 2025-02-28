@@ -1,0 +1,17 @@
+<!-- <p>child works!</p> -->
+<!-- <app-newborn></app-newborn> -->
+
+<!-- custom triggers -->
+
+<div class="flex gap-5 mb-3">
+  <button (click)="loadIt.set(true)">Click to Load it!</button>
+  <button (click)="showIt.set(true)">Click to Show it!</button>
+</div>
+
+@defer(when showIt(); prefetch when loadIt()) {
+<app-newborn></app-newborn>
+} @placeholder {
+<div class="w-15rem h-8rem bg-green-300"></div>
+} @error {
+<span class="text-red-500">ERROR!</span>
+}
